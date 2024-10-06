@@ -15,7 +15,7 @@ body {
     margin: auto; 
 }
 
-h1, h2, h3 {
+h1,h2, h3 {
     color: var(--color-texto);
     margin: 0;
 }
@@ -67,6 +67,8 @@ a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+
 }
 
 .hero article img {
@@ -74,4 +76,16 @@ a:hover {
     margin-left: 10px;
     max-width: 40%;
     height: auto;
+}
+
+section {
+    text-align: center;
+
+}
+
+section img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
 }
