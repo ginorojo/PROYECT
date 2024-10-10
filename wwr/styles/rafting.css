@@ -1,4 +1,3 @@
-
 :root {
     --color-principal: #007BFF; 
     --color-secundario: #FFD700; 
@@ -8,7 +7,6 @@
     --color-enlace-hover: #0056b3; 
 }
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,7 +15,7 @@ body {
     margin: auto; 
 }
 
-h1,h2, h3 {
+h1, h2, h3 {
     color: var(--color-texto);
     margin: 0;
 }
@@ -107,24 +105,34 @@ section img {
 
 .container1 {
     display: grid; /* Habilitamos el grid para este contenedor */
-    grid-template-columns:auto 1fr; /* Dos columnas: la primera se ajusta al tamaño del logo, la segunda ocupa el resto */
+    grid-template-columns: auto 1fr; /* Dos columnas: la primera se ajusta al tamaño del logo, la segunda ocupa el resto */
     align-items: center; /* Centra verticalmente los elementos */
     gap: 20px; /* Espacio entre columnas */
     padding: 10px; /* Espaciado interno del contenedor */
-    background-color: #b0b7b29d; /* Color de fondo del contenedor */
+    background-color: #b0b7b29d;
 }
 
 .container1 img {
     max-width: 70%; /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+nav {
+    display: flex; /* Hace que los elementos de la lista estén en fila */
 }
 
 nav ul {
     list-style-type: none; /* Elimina el estilo de lista */
     padding: 0; /* Quita el padding */
+    margin: 0; /* Quita el margen */
     display: flex; /* Muestra los enlaces en línea */
-    gap: -1px; /* Espacio entre los enlaces */
+    gap: 1px; /* Espacio entre los enlaces */
+}
+
+nav li {
+    border: 1px solid black; /* Borde negro para cada celda */
+    padding: 10px 40px; /* Aumenta el padding para hacer los cuadros más anchos */
+    border-radius: 5%;
 }
 
 nav a {
@@ -132,24 +140,24 @@ nav a {
     text-decoration: none; /* Elimina el subrayado */
 }
 
-.links-container {
-    display: flex; /* Coloca los enlaces en una fila */
+.flex-container-link {
+    display: flex;
     justify-content: center; /* Centra los enlaces horizontalmente */
     margin-top: 20px; /* Espacio superior para el contenedor de enlaces */
+    border-radius: 50%;
+}
 
-
+.adventure-container {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-evenly; /* Espacio uniforme entre los elementos */
+    flex-wrap: wrap; /* Permite múltiples filas si es necesario */
+    gap: 5px; /* Espaciado entre elementos */
 }
 
 .adventure-container img {
     max-width: 200px; /* Ancho máximo de cada imagen */
     margin: 17px; /* Espacio entre las imágenes */
     border: 1px solid #ccc; /* Borde opcional para las imágenes */
-}
-.adventure-container {
-    display: flex; /* Activa Flexbox */
-    justify-content: space-evenly; /* Espacio uniforme entre los elementos */
-    flex-wrap: wrap; /* Permite múltiples filas si es necesario */
-    gap: 5px; /* Espaciado entre elementos */
 }
 
 .adventure-item {
@@ -161,25 +169,12 @@ nav a {
     height: auto; /* Mantener la proporción */
 }
 
-
-nav ul {
-    list-style-type: none; /* Elimina el estilo de lista */
-    padding: 0; /* Quita el padding */
-    margin: 0; /* Quita el margen */
-    display: flex; /* Hace que los elementos de la lista estén en fila */
-}
-
-nav li {
-    border: 1px solid black; /* Borde negro para cada celda */
-    padding: 10px 40px; /* Aumenta el padding para hacer los cuadros más anchos */
-    gap: 0;
-}
-
 footer {
     text-align: center;
     padding: 10px;
     background-color: #b0b7b29d;
-    color: white;}
+    color: white;
+}
 
 .sociallinks img {
     width: 30px; 
