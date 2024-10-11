@@ -18,6 +18,9 @@ body {
 h1, h2, h3 {
     color: var(--color-texto);
     margin: 0;
+    padding-left:35px;
+    padding-top:5px;
+
 }
 
 p {
@@ -39,7 +42,10 @@ a:hover {
     overflow: hidden;
     width: 100%; 
     height: 100vh; 
-}
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+ }
+    
 
 .hero img {
     display: block;
@@ -76,12 +82,15 @@ a:hover {
 .hero article img {
     float: right;
     margin-left: 10px;
-    max-width: 40%;
+    max-width: 35%;
     height: auto;
+
+    
 }
 
 section {
     text-align: center;
+    margin: 15px;
 }
 
 section img {
@@ -118,7 +127,8 @@ section img {
 }
 
 nav {
-    display: flex; /* Hace que los elementos de la lista estén en fila */
+    display: flex;
+    justify-content: center; /* Hace que los elementos de la lista estén en fila */
 }
 
 nav ul {
@@ -166,7 +176,8 @@ nav a {
 
 .adventure-item img {
     width: 200px; /* Tamaño de las imágenes */
-    height: auto; /* Mantener la proporción */
+    height: auto; 
+    /* Mantener la proporción */
 }
 
 footer {
@@ -174,9 +185,11 @@ footer {
     padding: 10px;
     background-color: #b0b7b29d;
     color: white;
+    justify-content: center;
 }
 
 .sociallinks img {
     width: 30px; 
     margin: 0 10px; 
+
 }
