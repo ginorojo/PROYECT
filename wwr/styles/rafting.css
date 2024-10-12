@@ -149,35 +149,15 @@ nav a {
     color: #000000; /* Color del texto de los enlaces */
     text-decoration: none; /* Elimina el subrayado */
 }
-
-.flex-container-link {
-    display: flex;
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    margin-top: 20px; /* Espacio superior para el contenedor de enlaces */
-    border-radius: 50%;
-}
-
 .adventure-container {
-    display: flex; /* Activa Flexbox */
-    justify-content: space-evenly; /* Espacio uniforme entre los elementos */
-    flex-wrap: wrap; /* Permite múltiples filas si es necesario */
-    gap: 5px; /* Espaciado entre elementos */
-}
-
-.adventure-container img {
-    max-width: 200px; /* Ancho máximo de cada imagen */
-    margin: 17px; /* Espacio entre las imágenes */
-    border: 1px solid #ccc; /* Borde opcional para las imágenes */
+    display: flex; /* Cambiamos a flex para una alineación horizontal */
+    justify-content: space-around; /* Espacio igual entre elementos */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben */
 }
 
 .adventure-item {
-    text-align: center; /* Centrar imagen y texto */
-}
-
-.adventure-item img {
-    width: 200px; /* Tamaño de las imágenes */
-    height: auto; 
-    /* Mantener la proporción */
+    margin: 5px; /* Espacio alrededor de cada figura */
+    text-align: center; /* Centra el texto del figcaption */
 }
 
 footer {
