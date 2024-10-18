@@ -28,10 +28,10 @@ p {
 a {
     color: var(--color-enlace);
     text-decoration: none;
+}
 
-    &:hover {
-        color: var(--color-enlace-hover);
-    }
+a:hover {
+    color: var(--color-enlace-hover);
 }
 
 .hero {
