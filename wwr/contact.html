@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact-Planet Rafting</title>
+    <title>Contact - Planet Rafting</title>
     <meta name="description" content="Thank you for visiting our rafting page! If you have any questions, need more information, or would like to make a reservation, feel free to contact us. We are here to help you plan an exciting adventure.">
     <meta name="author" content="Gino Rojo">
 
@@ -16,7 +16,7 @@
     <header>
         <div class="container1">
             <img src="images/rafinglogo.png" width="200" alt="Planet Rafting logo">
-            <div class="flex-container-links"> <!-- Changed to lowercase for naming convention -->
+            <div class="flex-container-links">
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -25,8 +25,8 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </div> <!-- Closing the flex-container-links div correctly -->
-        </div> <!-- Closing the container1 div -->
+            </div>
+        </div>
     </header>
     
     <main>
@@ -37,12 +37,12 @@
         <div class="information">
             <section>
                 <article>
-                    <h2>Company Information</h2> <!-- Added heading -->
+                    <h2>Company Information</h2>
                     <p>Address: La Serena, Chile</p>
                     <p>Phone number: 971874099</p>
                     <p>Email: ginorojoj@gmail.com</p>
                 </article>
-                <h2>Location:</h2> <!-- Added heading for location -->
+                <h2>Location:</h2>
                 <div class="map">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d37235.34179571583!2d-71.24661462306447!3d-29.884386687957004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691b58752bdd4df%3A0xdee5696a9e50b108!2sCondominio%20Mistral%20III!5e0!3m2!1ses!2scl!4v1729226555588!5m2!1ses!2scl" 
@@ -58,7 +58,7 @@
 
         <!-- Contact form starts here -->
         <div class="form-container">
-            <h1>Contact Us</h1>
+            <h2>Contact Us</h2>
             <form action="#" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -66,26 +66,26 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label>Purpose of the message:</label>
-                <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                <label for="purpose">Purpose of the message:</label>
+                <label><input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required> General Inquiry</label>
+                <label><input type="radio" id="reservation-question" name="purpose" value="Reservation Question"> Reservation Question</label>
+                <label><input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion"> Website Suggestion</label>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter.
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter.
                 </label>
 
-                <button type="submit" class="submit-button">Send Message</button> <!-- Changed to English -->
+                <button type="submit" class="submit-button">Send Message</button>
             </form>
         </div>
         <!-- Contact form ends here -->
 
         <section class="adventure">
             <h2>"The People Behind Our Success"</h2>
-            <div class="adventure-container"> <!-- Flex container -->
+            <div class="adventure-container">
                 <figure class="adventure-item">
                     <img src="images/trabajador_feliz1.jpg" alt="Rafting adventure 1">
                     <figcaption>"Giving our best."</figcaption>
